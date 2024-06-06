@@ -1,0 +1,11 @@
+@use'../custom' as *;
+$primary-color: #333;
+
+body {
+  font-family: Arial, sans-serif;
+  color: $primary-color;
+}
+.test{
+    background-color: red;
+}
+
