@@ -11,4 +11,8 @@ public class TestController {
     public  String index(){
         return "index";
     }
+    @GetMapping("/process-cart")
+    public  String cart(){
+        return "cart";
+    }
 }

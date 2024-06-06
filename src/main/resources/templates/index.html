@@ -15,35 +15,16 @@
 </head>
 
 <body>
-<header class="header container-fluid d-none d-lg-block">
-    <div class="d-flex justify-content-between align-items-center p-3 shadow-sm">
-        <p class="fs-3 fw-bold  m-0 me-4"><span class="text-success">u</span>niversidad</p>
-        <form action="" class="flex-grow-1 me-2">
-
-            <input class=" form-control bg-light" type="search" placeholder="buscar qualquier cosa">
-
-        </form>
-
-        <div class=".5rem fs-.5 fw-bold ">
-            <a href="#" class="text-decoration-none me-4">Ensena en U </a>
-        </div>
-        <div class=".5rem fs-.5 fw-bold ">
-            <a href="#" class="text-decoration-none me-2"> U for businiss </a>
-
-        </div>
+<header th:replace="layout/Template :: header"/>
 
 
-        <nav>
-            <a href="#" class=" btn btn-outline-dark"> Inicial session</a>
-            <a href="#" class=" btn btn-dark"> Inicial session</a>
 
-        </nav>
 
-    </div>
+<!--
 
-</header>
+</header>-->
 
-<section class="descuentos container-xl">
+<!-- <section class="descuentos container-xl">
     <div class="row justify-content-around align-items-end bg-light">
         <div class="col-lg-4 shadow bg-white texto-descuentos">
             <div class="p-3">
@@ -193,7 +174,7 @@
                     <p>Aprende habilidades a tu ritmo con mas de 100 000 Cursos en video</p>
 
                 </div>
-            </div><!----col-md-3-->
+            </div>
             <div class=" col-md-3 mb-5 mb-md-0">
                 <div class="d-flex justify-content-around align-items-center">
 
@@ -206,7 +187,7 @@
                     <p>Comprar cursos importados por expertos del mundo real y obten un empleo</p>
 
                 </div>
-            </div><!----col-md-3-->
+            </div>
             <div class=" col-md-3 mb-5 mb-md-0">
                 <div class="d-flex justify-content-around align-items-center">
 
@@ -219,7 +200,7 @@
                     <p>Aprende a tu ritmo, con acceso de por vida desde ordenadores o dispositivos moviles</p>
 
                 </div>
-            </div><!----col-md-3-->
+            </div>
 
 
         </div>
@@ -227,7 +208,7 @@
     </div>
 
 
-</Section>
+</Section>-->
 <Main class="container-xl">
     <p class="fs fw-bold">Los estudiante estan viendo</p>
 
@@ -247,6 +228,7 @@
                     <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
                 </div>
             </div>
+            <a th:href="@{/cart.html}" class=" btn btn-success"> Add to Card</a>
         </li>
 
 
@@ -265,6 +247,8 @@
                     <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
                 </div>
             </div>
+            <a href="" class=" btn btn-success"> Add to Card</a>
+
         </li>
         <li class="curso">
             <div class="card">
@@ -281,6 +265,7 @@
                     <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
                 </div>
             </div>
+            <a href="" class=" btn btn-success"> Add to Card</a>
         </li>
         <li class="curso">
             <div class="card">
@@ -297,7 +282,10 @@
                     <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
                 </div>
             </div>
+            <a href="" class=" btn btn-success"> Add to Card</a>
+
         </li>
+        
         <li class="curso">
             <div class="card">
                 <img class="card-img-top" src="./src/img/curso_8.jpg" alt="imagen curso" />
@@ -313,11 +301,13 @@
                     <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
                 </div>
             </div>
+            <a href="" class=" btn btn-success"> Add to Card</a>
+
         </li>
 
     </ul>
 </Main>
-<section class="container-xl categorias mt-3">
+<!--<section class="container-xl categorias mt-3">
     <p class="fs-4 fw-bold"> Categorias Pricipales</p>
     <ul class="list-unstyled grid">
         <li class=" g-col-6 g-col-md-4 g-col-lg-3">
@@ -413,7 +403,7 @@
 
                 </ul>
 
-            </div> <!----columnas-->
+            </div> 
             <div class="col-12 col-sm-6 col-lg-3">
                 <p class="fw-bold fs-4">Negocios</p>
                 <ul class="list-unstyled ">
@@ -434,7 +424,7 @@
                     </li>
 
                 </ul>
-            </div> <!----columnas-->
+            </div> 
             <div class="col-12 col-sm-6 col-lg-3">
                 <p class="fw-bold fs-4">Informatica y software</p>
                 <ul class="list-unstyled ">
@@ -456,7 +446,7 @@
 
                 </ul>
 
-            </div> <!----columnas-->
+            </div> 
 
 
             <div class="col-12 col-sm-6 col-lg-3">
@@ -480,7 +470,7 @@
 
                 </ul>
 
-            </div> <!----columnas-->
+            </div> 
 
 
         </div>
@@ -565,42 +555,10 @@
             <a href="#" class="btn btn-dark"> Desubrio como</a>
         </div>
     </div>
-</section>
-<footer class="bg-dark py-5">
-    <div class="container-xl">
-        <div class="row align-items-start">
-            <nav class="col-md-2 d-grid gap-2">
-                <a href="#" class="text-light text-decoration-none">U business</a>
-                <a href="#" class="text-light text-decoration-none">Ensena en U</a>
-                <a href="#" class="text-light text-decoration-none">Consegue la app </a>
-                <a href="#" class="text-light text-decoration-none">Quien somos</a>
-                <a href="#" class="text-light text-decoration-none">Contacto</a>
-            </nav>
-            <nav class="col-md-2 d-grid gap-2">
-                <a href="#" class="text-light text-decoration-none">empleo</a>
-                <a href="#" class="text-light text-decoration-none">blog</a>
-                <a href="#" class="text-light text-decoration-none"> ayuda y asistence </a>
-                <a href="#" class="text-light text-decoration-none">Quien somos</a>
-                <a href="#" class="text-light text-decoration-none">Contacto</a>
-            </nav>
-            <nav class="col-md-2 d-grid gap-2 me-auto">
-                <a href="#" class="text-light text-decoration-none">Conditions</a>
-                <a href="#" class="text-light text-decoration-none"> politicas de privacidad</a>
-                <a href="#" class="text-light text-decoration-none"> mapa del siteo</a>
+</section>-->
+        <footer th:replace="layout/Template :: footer">
 
-            </nav>
-            <div class="col-md-2">
-                <a href="#" class="btn btn-outline-light">Espaniol</a>
-            </div>
-        </div>
-
-    </div>
-    <div class="container-xl mt-5 d-flex justify-content-between align-items-center">
-        <p class="text-light fs-3 fw-bold"><span class="text-success">u</span>niversidad</p>
-        <p class="text-light ">&Copy; U, inc.</p>
-
-    </div>
-</footer>
+        </
 </body>
 
 </html>
